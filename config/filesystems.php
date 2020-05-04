@@ -48,6 +48,21 @@ return [
             'root' => storage_path('app'),
         ],
 
+        'logs_cs1.6' => [
+            'driver' => 'local',
+            'root' => storage_path('app/logs_cs16'),
+        ],
+
+        'logs_csgo' => [
+            'driver' => 'local',
+            'root' => storage_path('app/logs_csgo'),
+        ],
+
+        'local' => [
+            'driver' => 'local',
+            'root' => storage_path('app'),
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
