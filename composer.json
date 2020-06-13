@@ -1,10 +1,12 @@
 {
     "name": "laravel/laravel",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "NFS Stats (CS1.6, CSGO)",
     "keywords": [
-        "framework",
-        "laravel"
+        "csgo",
+        "cs16",
+        "stats",
+        "psychostats"
     ],
     "license": "MIT",
     "require": {
