@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::namespace('Admin')->group(function () {
+    Route::middleware([])->group(function () {
+        Route::get('/generate-stats', 'LogFilesController@processAll');
+        Route::get('/reset-stats', 'LogFilesController@removeAll');
+    });
 });
